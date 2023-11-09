@@ -1,1 +1,16 @@
-<p>rooms works!</p>
+<!-- This is String Interpolation -->
+<p>Welcoem to {{hotelrooms}}</p> 
+<!-- 
+    This syntax of string interpolation in which variable declared inside 
+    .ts file used using {{}} braces. 
+-->
+
+<!-- This is property binding with event binding-->
+<!-- Any property of html tag we can bound to any variable of typescript. -->
+<!-- We created event for button (click) event and for div [innerText] = numberOfRooms we created property binding -->
+<div [hidden]="hiderooms">
+    number of Rooms ==>
+    <div [innerText]="numberOfRooms"></div>
+</div>
+<button (click)="toggle()">Toggle</button>
+
