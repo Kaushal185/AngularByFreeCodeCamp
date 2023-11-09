@@ -3,3 +3,11 @@ export interface Rooms {
     availableRooms : number;
     bookedRooms : number;
 }
+export interface RoomList{
+    roomTypes:string;
+    amenities:string;
+    price:number;
+    photos:string;
+    checkInTime:Date;
+    checkOutTime:Date;
+}

@@ -14,7 +14,10 @@
 </div>
 <button (click)="toggle()">Toggle</button>
 
+<!-- Optional chaining (concept of typescript) -->
+<!-- {{rooms?.availableRooms ?? 'No rooms'}} -->
 <div *ngIf="rooms.availableRooms>0">
-    <h3>{{rooms.availableRooms}}</h3>
+    {{roomList}}
+    <!-- <h3>{{rooms.availableRooms}}</h3> -->
 </div>
 
