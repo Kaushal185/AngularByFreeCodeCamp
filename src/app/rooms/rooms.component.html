@@ -17,7 +17,27 @@
 <!-- Optional chaining (concept of typescript) -->
 <!-- {{rooms?.availableRooms ?? 'No rooms'}} -->
 <div *ngIf="rooms.availableRooms>0">
-    {{roomList}}
-    <!-- <h3>{{rooms.availableRooms}}</h3> -->
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Even/Odd</th>
+            <th>Room Number</th>
+            <th>Room Type</th>
+            <th>Room price</th>
+            <th>Room Amenities</th>
+            <th>Check-in Time</th>
+        </tr>
+        <tr *ngFor="let room of roomList; let e = even;let i = index">
+            <td>{{i}}</td>
+            <!-- If e is true "Even is printed else it will print Odd" -->
+            <td>{{e?"Even":"Odd"}}</td>
+            <td>{{ room.roomNumber }}</td>
+            <td>{{ room.roomTypes }}</td>
+            <td>{{ room.price }}</td>
+            <td>{{ room.amenities }}</td>
+            <td>{{ room.checkInTime }}</td>
+        </tr>
+    </table>
+    
 </div>
 

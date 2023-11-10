@@ -23,6 +23,7 @@ export class RoomsComponent {
   }
   roomList : RoomList[] = [
     {
+      roomNumber:1,
       roomTypes:"Deluxe rooms",
       amenities:'AC,Free wi-fi,TV,Bathroom,Ktichen',
       price:500,
@@ -31,6 +32,7 @@ export class RoomsComponent {
       checkOutTime:new Date('21-Nov-2023')
     },
     {
+      roomNumber:2,
       "roomTypes": "Suite",
       "amenities": "AC,Free wi-fi,TV,Bathroom,Kitchen",
       "price": 700,
@@ -39,6 +41,7 @@ export class RoomsComponent {
       "checkOutTime": new Date('25-Nov-2023')
     },
     {
+      roomNumber:3,
       "roomTypes": "Standard rooms",
       "amenities": "AC,Free wi-fi,TV,Bathroom",
       "price": 400,
@@ -47,6 +50,7 @@ export class RoomsComponent {
       "checkOutTime": new Date('28-Nov-2023')
     },
     {
+      roomNumber:4,
       "roomTypes": "Executive Suite",
       "amenities": "AC,Free wi-fi,TV,Bathroom,Kitchen",
       "price": 800,
@@ -55,6 +59,7 @@ export class RoomsComponent {
       "checkOutTime": new Date('30-Nov-2023')
     },
     {
+      roomNumber:5,
       "roomTypes": "Family Suite",
       "amenities": "AC,Free wi-fi,TV,Bathroom,Kitchen",
       "price": 900,
@@ -63,6 +68,7 @@ export class RoomsComponent {
       "checkOutTime": new Date('02-Dec-2023')
     },
     {
+      roomNumber:6,
       "roomTypes": "Penthouse",
       "amenities": "AC,Free wi-fi,TV,Bathroom,Kitchen",
       "price": 1200,
